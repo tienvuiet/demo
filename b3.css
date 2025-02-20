@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.dong1{
+    background-color: #ac006e;
+    padding: 20px 0;
+    margin-bottom: 10px;
+}
+.dong2{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.dong2 div{ 
+    background-color: #db317f;
+    padding: 10px 0px;
+    width: 100%;
+}
+.dong3 {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.dong3 div{
+    background-color: #de5d9e;
+    padding: 20px 0px;
+    width: 100%;
+}
+.dong4{
+    background-color:#ed7bb8;
+    padding: 20px 0;
+}
+/* Table */
+@media screen and (max-width: 1200px) {
+    .dong2{
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .dong2 div{
+        width: calc(50% - 10px);
+    }
+    .dong3{
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+}
+/* phone */
+@media screen and (max-width: 768px){
+    .dong2{
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .dong2 div{
+        width: 100%;
+    }
+}

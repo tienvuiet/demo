@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.dong1{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.dong1 div:nth-of-type(1){
+    color: #9f4a4b;
+    font-size: 156px;
+    width: 100%;
+    flex: 1;
+}
+.dong1 div:nth-of-type(2){
+    font-size: 119px;
+    color: white;
+    padding: 20px 53px;
+    background-color: #9f4a4b;
+    display: none;
+}
+.dong1 div:nth-of-type(3){
+    color: white;
+    background-color: #9f4a4b;
+    width: 100%;
+    flex: 3;
+    padding: 20px 53px;
+}
+.dong2 {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.dong2 div{
+    background-color: #9f4a4b;
+    color: white;
+    width: 100%;
+    padding: 120px 0;
+}
+.dong2 div:nth-of-type(1){  
+    width: calc(66.777% - 10px);
+
+}
+.dong2 div:nth-of-type(2){
+    width: 33.3%;
+
+
+}
+.dong3{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+}
+.dong3 div{
+    background-color: #9f4a4b;
+    padding: 20px 0;
+    color: white;
+    width: calc(33.33333% - 10px);
+} 
+@media screen and (max-width: 1200px) {
+    .dong2 {
+        flex-wrap: wrap;
+    }
+    .dong2 div {
+        width: 100%; 
+    }
+    .dong3{
+        flex-wrap: wrap;
+    }
+    .dong3 div{
+        width: calc(50% - 10px);
+    }
+}  
+@media screen and (max-width: 768px){
+    .dong1{
+        flex-wrap: wrap;
+    }
+    .dong1 div{
+        width: calc(50%-10px);
+    }
+    .dong1 div:nth-of-type(1){
+        width: calc(66.7%-10px);
+    }
+    .dong1 div:nth-of-type(2){
+        display: block;
+        width: 33.3%;
+    }
+    .dong3{
+        flex-wrap: wrap;
+    }
+    .dong3 div{
+        width: 100%;
+    }
+}
