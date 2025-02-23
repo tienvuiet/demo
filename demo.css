@@ -1,0 +1,275 @@
+:root{
+    --heading-color: #FFFFFF;
+    --text-color: #C7C7C7;
+    --btn-coler: #D3E97A;
+    --bg-color: #0A0A0A;
+    --border-color: #484848;
+    --primary-font:  "Bebas Neue";
+    --secondary-font:  "Manrope";
+    --corner-radius: 12px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--text-color);
+    font-family: var(--secondary-font);
+    font-size: 18px;
+}
+a{
+    text-decoration: none;
+}
+nav{
+    background-color: var(--bg-color);
+    padding: 24px 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .logo{
+    font-family: var(--primary-font);
+    font-size: 32px;
+}
+nav .mobile-menu{
+    display: none;
+}
+nav .desktop-menu{
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+}
+nav .desktop-menu li{
+    list-style-type: none;
+}
+nav a{
+    font-size: 16px;
+}
+@media screen and (max-width: 375px) {
+    nav .desktop-menu{
+        display: none;
+    }
+    nav .mobile-menu{
+        display: block;
+        background-color: transparent;
+        border: none;
+    }
+    nav{
+        padding: 20px 16px;
+    }
+    
+}
+header{
+    display: flex;
+    padding-top: 30px;
+    background-color: var(--bg-color);
+    gap: 80px;
+}
+header .anh1{
+    padding-right: 108px;
+}
+header .tong1 h3{
+    font-size: 45px;
+}
+header .tong1{
+    padding-left: 108px;
+    padding-top: 190px;
+}
+header .tong1 div{
+    padding: 22px;
+    position: relative;
+    padding-left: 0px;
+}
+header .tong1 div button{
+    background-color: var(--btn-coler);
+    padding: 20px 24px;
+    border-radius: 100px;
+    color: var(--bg-color);
+
+}
+header .tong1 div img:nth-of-type(1) {
+    position: absolute;
+    top: 27px;
+    left: 186px;
+}
+header .tong1 div img:nth-of-type(2) {
+    position: absolute;
+    top: 27px;
+    left: 250px;
+}
+@media screen and (max-width: 375px){
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+    header .tong1 {
+        padding-left: 16px;
+        padding-top: 40px;
+    }
+    header .anh1 img {
+        width: 343px;
+        height: 400px;
+        padding-top: 20px; 
+        padding-left: 16px;
+    }
+    header .tong1 h3 {
+        font-size: 42px;
+    }
+}
+.project0{
+    padding: 80px 108px;
+    background-color: var(--bg-color);
+}
+.project0 h3{
+    font-size: 43px;
+}
+
+.project1{
+    display: flex;
+    flex-direction: row;
+    background-color: var(--bg-color);
+    padding: 80px 108px;
+}
+.project1 .project11{
+    position: relative;
+    background-color: var(--border-color);
+    width: 600px;
+    height: 600px;
+}
+.project1 .project11 img{
+    position: absolute;
+    width: 486px;
+    height: 347px;
+    top: 127px;
+    left: 57px;
+
+}
+.project1 .project11 p{
+    position: absolute;
+    background-color: var(--bg-color);
+    border-radius: 100px;
+    padding: 8px 16px;
+    font-size: 14px;
+    top: 16px;
+    left: 16px;
+}
+.project1 .project12{
+    width: 576px;
+    height: 480px; 
+    padding: 60px 48px;
+}
+.project1 .project12 p:nth-child(1){
+    font-size: 32px;
+}
+.project1 .project12 p:nth-child(2){
+    font-size: 18px;
+}
+.project1 .project12 .project123{
+    padding-top: 32px;
+}
+.project1 .project12 .project123 .tieude123{
+    font-size: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid ;
+}
+.project1 .project12 .project123 .tieude1234{
+    display: flex;
+    gap: 411px;
+    padding: 16px 0;
+    border-bottom: 1px solid;
+}
+.project1 .project12 .project123 .tieude1234 p{
+    font-size: 16px;
+}
+.project1 .project12 .project123 .tieude1235{
+    display: flex;
+    gap: 295px;
+    padding: 16px 0;
+    border-bottom: 1px solid;
+
+}
+.project1 .project12 .project123 .tieude1235 p{
+    font-size: 16px;
+}
+.project1 .project12 .project123 .tieude1236 {
+    padding-top: 48px;
+    display: flex;
+    gap: 24px;
+    
+}
+.project1 .project12 .project123 .tieude1236 a{
+    color: var(--btn-coler);
+    border-bottom: 2px solid var(--btn-coler);
+}
+@media screen and (max-width: 375px){
+    
+    .project0 {
+        width: 373px;
+        height: 133px;
+        padding: 64px 16px;
+    }
+    .project0 h3{
+        font-size: 30px;
+    }
+    .project1{
+        display: flex;
+        flex-direction: column;
+    }
+    .project1 .project11{
+        width: 343px;
+        height: 343px;
+        top: 64px;
+        left: -92px;
+    }
+    .project1 .project11 img{
+        width: 90%;
+        height: auto;
+        top: 65px;
+        left: 18px;
+    }
+    .project1 .project11 p{
+        font-size: 12px;
+    }
+    .project1 .project12 {
+        width: 343px;
+        height: 494px;
+        padding: 60px 48px;
+        margin-left: -137px;
+        margin-top: 40px;
+    }
+    .project1 .project12 p:nth-child(1){
+        width: 343px;
+    }
+    .project1 .project12 p:nth-child(2){
+        width: 343px;
+    }
+    .project1 .project11 .project12 p{
+        font-size: 24px;
+        width: 343px;
+    }
+    .project1 .project12 .project123{
+        width: 343px;
+    }
+    .project1 .project12 .project123 .tieude1234 {
+        display: flex;
+        gap: 276px;
+        padding: 16px 0;
+        border-bottom: 1px solid;
+    }
+    .project1 .project12 .project123 .tieude1235 {
+        display: flex
+    ;
+        gap: 39px;
+        padding: 16px 0;
+        border-bottom: 1px solid;
+    }
+    .project1 .project12 .project123 .tieude1236 {
+        padding-top: 40px;
+        display: flex
+    ;
+        gap: 47px;
+        background-color: var(--bg-color);
+        padding: 0px 10px;
+       
+    }
+}
